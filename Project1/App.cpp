@@ -8,13 +8,9 @@ App::App(){
 App::~App(){
 }
 
-int main(int argc, char* argv[]){
-	App app;
-	app.onExecute();
-	return 0;
-}
 
 void App::onExecute(){
+	//player setup
 	Player player;
 	std::vector <Ability*> abilitiesToDelete;
 	Ability* ability = new Ability(1, 0);
@@ -30,4 +26,10 @@ void App::onExecute(){
 		delete abilitiesToDelete.back();
 		abilitiesToDelete.pop_back();
 	}
+}
+
+int main(int argc, char* argv[]){
+	App app;
+	app.onExecute();
+	return 0;
 }
