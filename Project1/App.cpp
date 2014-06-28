@@ -12,20 +12,10 @@ App::~App(){
 void App::onExecute(){
 	//player setup
 	Player player;
-	std::vector <Ability*> abilitiesToDelete;
-	Ability* ability = new Ability(1, 0);
-	abilitiesToDelete.push_back(ability);
-	player.addAbility(ability);
+	//TODO add abilities, etc. to player
 
-	Simulator sim;
-	sim.simulate(player);
-
-	//cleanup
-	std::vector<const Ability*> temp = player.clearAbilities();
-	while (!abilitiesToDelete.empty()){
-		delete abilitiesToDelete.back();
-		abilitiesToDelete.pop_back();
-	}
+	Simulator sim(player);
+	sim.simulate();
 }
 
 int main(int argc, char* argv[]){

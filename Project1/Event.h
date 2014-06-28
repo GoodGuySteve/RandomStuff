@@ -1,4 +1,7 @@
 #pragma once
+
+#include "PlayerStats.h"
+
 class Event{
 public:
 	Event();

@@ -68,18 +68,22 @@
     <ClInclude Include="Ability.h" />
     <ClInclude Include="ActionEvent.h" />
     <ClInclude Include="App.h" />
+    <ClInclude Include="Buff.h" />
     <ClInclude Include="Event.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayerEvent.h" />
+    <ClInclude Include="PlayerStats.h" />
     <ClInclude Include="Simulator.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Ability.cpp" />
     <ClCompile Include="ActionEvent.cpp" />
     <ClCompile Include="App.cpp" />
+    <ClCompile Include="Buff.cpp" />
     <ClCompile Include="Event.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayerEvent.cpp" />
+    <ClCompile Include="PlayerStats.cpp" />
     <ClCompile Include="Simulator.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

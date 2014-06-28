@@ -1,8 +1,7 @@
 #include "Player.h"
 
 
-Player::Player()
-{
+Player::Player(){
 }
 
 void Player::addAbility(Ability* ability){
@@ -32,20 +31,3 @@ Player::~Player()
 }
 
 
-PlayerStats::PlayerStats(){
-	brutality = 3;
-	finesse = 3;
-	moxie = 5;
-	tech = 7;
-	insight = 7;
-	grit = 5;
-}
-
-PlayerStats::PlayerStats(int brutality, int finesse, int moxie, int tech, int insight, int grit){
-	this->brutality = brutality;
-	this->finesse = finesse;
-	this->moxie = moxie;
-	this->tech = tech;
-	this->insight = insight;
-	this->grit = grit;
-}
